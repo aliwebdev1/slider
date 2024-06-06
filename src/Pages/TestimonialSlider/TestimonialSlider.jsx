@@ -28,8 +28,8 @@ const TestimonialSlider = () => {
     };
 
     const slides = [
-        { image: '/images/relief-international.png', text: "Relief International is doing great work!" },
-        { image: '/images/oxfam.png', text: "Oxfam is a fantastic organization!" },
+        { image: '/images/relief-international.png', text: "Relief International is doing great work!", author: "Hanna Yoshimoto", organization: "ali" },
+        { image: '/images/oxfam.png', text: "Oxfam is a fantastic organization!", author: "Hanna Yoshimoto", organization: "joy" },
         { image: '/images/save-the-children.png', text: "Save the Children is making a difference!" },
         { image: '/images/psa.png', text: "PSA's efforts are commendable!" },
         { image: '/images/unicef.png', text: "UNICEF was very pleased and satisfied by their work", author: "Hanna Yoshimoto", organization: "UNICEF" },
@@ -46,7 +46,7 @@ const TestimonialSlider = () => {
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index} className="slide">
-                        <img src={slide.image} alt="Organization Logo" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Coa_Illustration_Cross_Pattee_rounded.svg/300px-Coa_Illustration_Cross_Pattee_rounded.svg.png" alt="Organization Logo" />
                     </div>
                 ))}
             </Slider>
